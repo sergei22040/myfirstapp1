@@ -1,4 +1,4 @@
-package lr2;
+package lr3;
 
 public class example8 {
 }

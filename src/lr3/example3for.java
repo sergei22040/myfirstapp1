@@ -1,9 +1,9 @@
-package lr2;
+package lr3;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class example3while {
+public class example3for {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println("Введите положительное число >=2");
@@ -11,11 +11,11 @@ public class example3while {
         int[] nums = new int[size];
         nums[0] = 1;
         nums[1] = 1;
-        int i = 2;
-        while (i < nums.length) {
+        for (int i = 2; i < nums.length; i++) {
             nums[i] = nums[i - 1] + nums[i - 2];
-            i++;
         }
         System.out.println(Arrays.toString(nums));
+
     }
 }
+

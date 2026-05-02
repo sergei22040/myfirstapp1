@@ -1,9 +1,9 @@
-package lr2;
+package lr3;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class example4while {
+public class example4for {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println("Введите два целых числа");
@@ -16,11 +16,9 @@ public class example4while {
         }
         int size = max-min + 1;
         int[] nums = new int[size];
-        int i = 0;
-        while (min<=max) {
+        for (int i = 0; i < nums.length; i++) {
             nums[i] = min;
             min++;
-            i++;
         }
         System.out.println(Arrays.toString(nums));
     }
